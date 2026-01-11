@@ -62,10 +62,10 @@ if __name__ == "__main__":
 
             # Print context with formatting
             print("\n" + "=" * 80)
-            print("📚 RETRIEVED CONTEXT:")
-            print("=" * 80)
-            print(context)
-            print("=" * 80 + "\n")
+            #print("📚 RETRIEVED CONTEXT:")
+            #print("=" * 80)
+            #print(context)
+            #print("=" * 80 + "\n")
 
             # Get and print the answer
             response = rag_chain.invoke(question)

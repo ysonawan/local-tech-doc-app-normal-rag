@@ -41,14 +41,14 @@ A Retrieval-Augmented Generation (RAG) application that answers questions about 
 
 ### Option 1: Streamlit Web UI (Recommended)
 ```bash
-streamlit run streamlit_app.py
+uv run --active streamlit run streamlit_app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`
 
 ### Option 2: CLI Version
 ```bash
-python main.py
+uv run python main.py 
 ```
 
 ## 📚 Supported Documentation
