@@ -3,3 +3,4 @@ langchain-ollama
 langchain-chroma
 beautifulsoup4
 streamlit
+langchain-google-genai

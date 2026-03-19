@@ -3,6 +3,11 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from vector import retriever
+from langchain.chat_models import init_chat_model
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Helper function to format retriever output as string
 def format_docs(docs):
@@ -10,6 +15,8 @@ def format_docs(docs):
 
 # 1. Model
 model = OllamaLLM(model="llama3.2")
+#os.environ["GEMINI_API_KEY"] = os.getenv('GEMINI_API_KEY')
+#model = init_chat_model("google_genai:gemini-2.5-flash-lite")
 
 # 2. Prompt Template for Tech Documentation RAG
 TECH_DOC_SYSTEM_PROMPT = """
